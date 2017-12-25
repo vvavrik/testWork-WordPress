@@ -13,14 +13,14 @@
     height: 210px;
 }
 
-h1 {
+h1.site-title {
     margin-left: -30px;
     margin-top: 85px;
     font-size: 36px;
     width: 200px;
 }
 
-h1:before {
+h1.site-title:before {
     display: block;
     content: '-';
     height: 130px;
@@ -40,6 +40,20 @@ h1 a {
     margin-left: 0px;
 }
 
+h1.page-title {
+    font-size: 32px;
+}
+
+h2.entry-title a {
+    font-size: 20px;
+    color: white;
+    text-decoration: underline;
+}
+
+h2.entry-title a:hover {
+    color: orange;
+}
+
 h4.site-description {
     color: white;
     text-shadow: 0px 0px 3px #333, 2px 2px 20px #ffe200;
@@ -51,8 +65,10 @@ h4.site-description {
 }
 
 nav.navbar {
-    background-color: #147377 !important; 
+    background-color: #464646 !important; 
+    border-bottom: 1px solid gray;
 }
+
 
 ul.navbar-nav a,
 div.copyright {
@@ -60,8 +76,44 @@ div.copyright {
     text-shadow: 1px 1px 1px #000000, 1px 1px 3px #baba93;
 }
 
+a.more-link {
+    background-color: #f0f0f0;
+}
+
+a.more-link:hover {
+    background-color: #eef;
+    color: darkorange;
+}
 
 
 footer {
-    background-color: #147377 !important; 
+    background-color: #464646 !important; 
+    border-top: 1px solid gray;
+}
+
+footer.entry-meta {
+    padding: 2px !important;
+    padding-left: 8px !important;
+    border-radius: 3px !important;
+    background-color: #222 !important;
+    margin-top: 3rem;
+}
+
+a.post-edit-link {
+    color: #fff;
+    text-decoration: underline;
+}
+
+a.post-edit-link:hover {
+    color: darkorange;
+}
+
+hr.section-divider {
+    all: initial !important;
+    clear: both !important;
+    visibility: hidden !important; 
+}
+
+hr.section-divider:after {
+    all: initial !important;
 }
